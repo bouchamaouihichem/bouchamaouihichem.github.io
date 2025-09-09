@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Skills & Languages</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <!-- Header -->
+  <header class="p-6 bg-indigo-600 text-white text-center">
+    <h1 class="text-3xl font-bold">Skills & Languages</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-100 p-4 shadow flex justify-center flex-wrap gap-4">
+    <a href="index.html" class="text-indigo-600 hover:underline">Home</a>
+    <a href="education.html" class="text-indigo-600 hover:underline">Education</a>
+    <a href="research.html" class="text-indigo-600 hover:underline">Research</a>
+    <a href="teaching.html" class="text-indigo-600 hover:underline">Teaching</a>
+    <a href="talks.html" class="text-indigo-600 hover:underline">Talks</a>
+    <a href="awards.html" class="text-indigo-600 hover:underline">Awards</a>
+    <a href="leadership.html" class="text-indigo-600 hover:underline">Leadership</a>
+    <a href="publications.html" class="text-indigo-600 hover:underline">Publications</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-3xl mx-auto p-6 space-y-8">
+
+    <!-- Technical Skills -->
+    <section>
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Technical Skills</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li><strong>Programming Languages:</strong> C/C++, Python, Mathematica, MATLAB, VHDL, Turbo Pascal, Stata</li>
+        <li><strong>Software Packages:</strong> ROOT/RDataFrame, Coffea, TensorFlow, Keras, TMVA, Scientific Python, OpenMP</li>
+        <li><strong>Physics Tools:</strong> Pythia8, Madgraph5, Singularity, TnP</li>
+        <li><strong>Other Tools:</strong> GitHub/GitLab, Jupyter, Vim, ExpressSCH/PCB</li>
+      </ul>
+    </section>
+
+    <!-- Languages -->
+    <section>
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Languages</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Arabic — Fluent</li>
+        <li>French — Native</li>
+        <li>English — Fluent</li>
+        <li>Japanese — Beginner (JLPT N5 certified)</li>
+      </ul>
+    </section>
+
+    <!-- Miscellaneous Skills -->
+    <section>
+      <h2 class="text-2xl font-semibold border-b pb-2 mb-4">Miscellaneous</h2>
+      <ul class="list-disc pl-6 space-y-2">
+        <li>Meme maker, meme page owner, and coordinator of Princeton’s yearly 5-hour accelerated memester certification workshop</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="p-6 text-center text-gray-600">
+    © <span id="year"></span> Your Name
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
