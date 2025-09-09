@@ -1,59 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Home</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-  <header class="p-6 text-center bg-indigo-600 text-white">
-    <h1 class="text-4xl font-bold">Hi, I'm Your Name 👋</h1>
-    <p class="mt-2 text-lg">Developer • Designer • Creator</p>
+  <!-- Header -->
+  <header class="p-6 bg-indigo-600 text-white text-center">
+    <h1 class="text-4xl font-bold">Your Name</h1>
+    <p class="mt-2 text-lg">High Energy Physics PhD | Researcher | Educator</p>
   </header>
 
+  <!-- Navigation -->
+  <nav class="bg-gray-100 p-4 shadow flex justify-center space-x-6">
+    <a href="education.html" class="text-indigo-600 hover:underline">Education</a>
+    <a href="research.html" class="text-indigo-600 hover:underline">Research</a>
+    <a href="teaching.html" class="text-indigo-600 hover:underline">Teaching</a>
+    <a href="talks.html" class="text-indigo-600 hover:underline">Talks</a>
+    <a href="awards.html" class="text-indigo-600 hover:underline">Honors & Awards</a>
+    <a href="leadership.html" class="text-indigo-600 hover:underline">Leadership</a>
+    <a href="publications.html" class="text-indigo-600 hover:underline">Publications</a>
+    <a href="skills.html" class="text-indigo-600 hover:underline">Skills</a>
+  </nav>
+
+  <!-- Bio Section -->
   <main class="max-w-3xl mx-auto p-6">
-    <!-- About -->
-    <section class="my-12">
+    <section>
       <h2 class="text-2xl font-semibold mb-4">About Me</h2>
       <p>
-        I'm passionate about building things for the web. 
-        I enjoy working with JavaScript, Python, and design tools to create fun and useful projects.
+        I'm a PhD candidate in High Energy Physics at Princeton University. My research focuses on 
+        tracking in dense environments, machine learning applications in particle physics, and 
+        searches for exotic Higgs decays. 
       </p>
-    </section>
-
-    <!-- Projects -->
-    <section class="my-12">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-      <ul class="space-y-4">
-        <li class="p-4 border rounded-lg shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-bold">🚀 Project One</h3>
-          <p>A cool description of your first project.</p>
-          <a href="https://github.com/yourusername/project-one" class="text-indigo-600">View on GitHub</a>
-        </li>
-        <li class="p-4 border rounded-lg shadow-sm hover:shadow-md transition">
-          <h3 class="text-xl font-bold">📱 Project Two</h3>
-          <p>A mobile app or something you’ve built.</p>
-          <a href="https://github.com/yourusername/project-two" class="text-indigo-600">View on GitHub</a>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section class="my-12">
-      <h2 class="text-2xl font-semibold mb-4">Get in Touch</h2>
-      <p>Email me at <a href="mailto:youremail@example.com" class="text-indigo-600">youremail@example.com</a></p>
-      <p>Or find me on 
-        <a href="https://twitter.com/yourhandle" class="text-indigo-600">Twitter</a> & 
-        <a href="https://linkedin.com/in/yourhandle" class="text-indigo-600">LinkedIn</a>.
+      <p class="mt-4">
+        Outside of research, I enjoy teaching, mentoring, and building initiatives that support equity 
+        and inclusion in physics. I'm also a certified meme maker 😉.
       </p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="p-6 text-center text-gray-600">
-    © <span id="year"></span> Your Name. All rights reserved.
+    © <span id="year"></span> Your Name
   </footer>
-
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
